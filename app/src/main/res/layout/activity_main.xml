@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="items"
+            type="java.util.List" />
+
+        <variable
+            name="viewHolder"
+            type="oliveiradev.com.github.lib.SimpleBaseViewHolder" />
+
+        <variable
+            name="onItemClick"
+            type="oliveiradev.com.github.lib.OnItemClick" />
+    </data>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="oliveiradev.com.github.simpledatabindingrecycleradapter.MainActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:customViewHolder="@{viewHolder}"
+            app:entries="@{items}"
+            app:layout="@{@layout/item_sample}"
+            app:onItemClick="@{onItemClick}"/>
+    </LinearLayout>
+</layout>

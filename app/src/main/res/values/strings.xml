@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimpleDataBindingRecyclerAdapter</string>
+    <array name="series">
+        <item>House of Cards</item>
+        <item>Game of Thrones</item>
+        <item>The Walking Dead</item>
+        <item>Sons of Anarchy</item>
+    </array>
+</resources>
